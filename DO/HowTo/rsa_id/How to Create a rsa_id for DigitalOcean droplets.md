@@ -21,7 +21,7 @@ azure_dns_zone="us.rentals"
 your_email="rfellows@bogus.email.com"
 
 # Generate the SSH key pair with a custom filename
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f ~/.ssh/id_rsa_${azure_dns_zone}
+ssh-keygen -t rsa -b 4096 -C "$your_email" -f ~/.ssh/id_rsa_${azure_dns_zone}
 
 # This creates:
 # - Private key: ~/.ssh/id_rsa_us.rentals
@@ -66,9 +66,10 @@ type %USERPROFILE%\.ssh\id_rsa_%azure_dns_zone%.pub
 ```bash
 # Set your identifier (e.g., DNS zone, project name, environment)
 azure_dns_zone="us.rentals"
+your_email="rfellows@bogus.email.com"
 
 # Generate the SSH key pair with a custom filename
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f ~/.ssh/id_rsa_${azure_dns_zone}
+ssh-keygen -t rsa -b 4096 -C "$your_email" -f ~/.ssh/id_rsa_${azure_dns_zone}
 
 # This creates:
 # - Private key: ~/.ssh/id_rsa_us.rentals
@@ -89,9 +90,11 @@ cat ~/.ssh/id_rsa_${azure_dns_zone}.pub
 ```bash
 # Set your identifier (e.g., DNS zone, project name, environment)
 azure_dns_zone="us.rentals"
+your_email="rfellows@bogus.email.com"
 
 # Generate the SSH key pair with a custom filename
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f ~/.ssh/id_rsa_${azure_dns_zone}
+ssh-keygen -t rsa -b 4096 -C "$your_email" -f ~/.ssh/id_rsa_${azure_dns_zone}
+
 
 # This creates:
 # - Private key: ~/.ssh/id_rsa_us.rentals
